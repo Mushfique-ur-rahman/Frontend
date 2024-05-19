@@ -30,7 +30,7 @@ function LandingPage() {
       .delete(`http://localhost:8081/product/${productId}`)
       .then((res) => {
         console.log(res.data);
-        fetchProducts(); // Refresh the list after deletion
+        fetchProducts();
       })
       .catch((err) => {
         console.error("Error deleting product:", err);
